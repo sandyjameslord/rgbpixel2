@@ -1493,7 +1493,7 @@ export default {
             // }
             // else 
             if (userEmail == this.$auth.$state.user.email) {
-                // if (this.$route.query.burgerID == this.burgers[i]._id) {
+                if (this.$route.query.imageID == this.burgers[i]._id) {
                     console.log("inside nthis place");
                     let bString = this.burgers[i].burgerString;
                     let bNumber = i;
@@ -1508,9 +1508,9 @@ export default {
                         firstData.push(bStatus)
                     }
                     this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
-                    // this.parseDataIntoNewBurgers(this.burgers[i].burgerString, i, this.burgers[i].burgerTitle, this.burgers[i]._id, this.burgers[i].burgerStatus)
+                    
                 }
-            // }
+            }
             
         }
         if (firstData.length == 0) {
