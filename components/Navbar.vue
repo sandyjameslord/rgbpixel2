@@ -5,7 +5,7 @@
                 <div id='titleContainer'>
                     <span id='title' class='hovering left'>rgbPixel</span>
                     <div id='questionSwitchContainer'>
-                        <nuxt-link id='questionMark' to='/whatIsBurgerfy' class='hovering right'>?</nuxt-link>
+                        <nuxt-link id='questionMark' to='/whatIsRGBPixel' class='hovering right'>?</nuxt-link>
                         <span id='switchButton' @click="switchToPhoto()" class='hovering right'>Switch <br> bkgrnd</span>
                     </div>
                     
