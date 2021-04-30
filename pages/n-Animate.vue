@@ -1472,26 +1472,27 @@ export default {
         let firstData = [];    
         for (let i = 0; i < this.burgers.length; i++) {
             let userEmail = this.burgers[i].burgerCreator;
-            if (this.$route.query.burgerID != "") {
-                if (this.$route.query.burgerID == this.burgers[i]._id) {
-                    let bString = this.burgers[i].burgerString;
-                    let bNumber = i;
-                    let bTitle = this.burgers[i].burgerTitle;
-                    console.log("inside this area with title", bTitle)
-                    let bID = this.burgers[i]._id;
-                    let bStatus = this.burgers[i].burgerStatus;
-                    if (firstData.length == 0) {
-                        firstData.push(bString)
-                        firstData.push(bNumber)
-                        firstData.push(bTitle)
-                        firstData.push(bID)
-                        firstData.push(bStatus)
-                    }
-                this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
-                return
-                }
-            }
-            else if (userEmail == this.$auth.$state.user.email) {
+            // if (this.$route.query.burgerID != "") {
+            //     if (this.$route.query.burgerID == this.burgers[i]._id) {
+            //         let bString = this.burgers[i].burgerString;
+            //         let bNumber = i;
+            //         let bTitle = this.burgers[i].burgerTitle;
+            //         console.log("inside this area with title", bTitle)
+            //         let bID = this.burgers[i]._id;
+            //         let bStatus = this.burgers[i].burgerStatus;
+            //         if (firstData.length == 0) {
+            //             firstData.push(bString)
+            //             firstData.push(bNumber)
+            //             firstData.push(bTitle)
+            //             firstData.push(bID)
+            //             firstData.push(bStatus)
+            //         }
+            //     this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
+            //     return
+            //     }
+            // }
+            // else 
+            if (userEmail == this.$auth.$state.user.email) {
                 let bString = this.burgers[i].burgerString;
                 let bNumber = i;
                 let bTitle = this.burgers[i].burgerTitle;
