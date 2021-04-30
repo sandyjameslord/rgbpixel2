@@ -427,7 +427,7 @@ export default {
                 square.style.animation = `transposeColor${i} 1000ms ${i*1}ms ease-in-out forwards`;
             }
             setTimeout(function() { 
-                let url = `http://rgbpixel.herokuapp.com/n-Animate?burgerTitle=${imageID}`
+                let url = `http://rgbpixel.herokuapp.com/n-Animate?imageID=${imageID}`
                 location.assign(url)
                 // location.reload();
             }, 1200);
