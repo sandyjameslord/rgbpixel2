@@ -1472,11 +1472,12 @@ export default {
         let firstData = [];    
         for (let i = 0; i < this.burgers.length; i++) {
             let userEmail = this.burgers[i].burgerCreator;
-            if (this.$route.query.burgerID) {
+            if (this.$route.query.burgerID != "") {
                 if (this.$route.query.burgerID == this.burgers[i]._id) {
                     let bString = this.burgers[i].burgerString;
                     let bNumber = i;
                     let bTitle = this.burgers[i].burgerTitle;
+                    console.log("inside this area with title", bTitle)
                     let bID = this.burgers[i]._id;
                     let bStatus = this.burgers[i].burgerStatus;
                     if (firstData.length == 0) {
