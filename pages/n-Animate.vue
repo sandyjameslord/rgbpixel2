@@ -389,13 +389,13 @@ export default {
             }
             
             // let flashingToThisBurgerString = "";
-            let title = "";
+            let imageID = "";
             for (let i = 0; i < this.burgers.length; i++) {
                 if (this.burgers[i].burgerCreator == "burgerfyAdmin@gmail.com") {
                     let burgerTitle = this.burgers[i].burgerTitle;
 
                     if (burgerTitle == this.otherImage) {
-                        title = burgerTitle;
+                        imageID = this.burgers[i]._id;
                         this.flashingToThisBurgerString = this.burgers[i].burgerString;
                     }
                 }
