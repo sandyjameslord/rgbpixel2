@@ -1493,20 +1493,23 @@ export default {
             // }
             // else 
             if (userEmail == this.$auth.$state.user.email) {
-                let bString = this.burgers[i].burgerString;
-                let bNumber = i;
-                let bTitle = this.burgers[i].burgerTitle;
-                let bID = this.burgers[i]._id;
-                let bStatus = this.burgers[i].burgerStatus;
-                if (firstData.length == 0) {
-                    firstData.push(bString)
-                    firstData.push(bNumber)
-                    firstData.push(bTitle)
-                    firstData.push(bID)
-                    firstData.push(bStatus)
+                if (this.$route.query.burgerID == this.burgers[i]._id) {
+                    console.log("inside nthis place");
+                    let bString = this.burgers[i].burgerString;
+                    let bNumber = i;
+                    let bTitle = this.burgers[i].burgerTitle;
+                    let bID = this.burgers[i]._id;
+                    let bStatus = this.burgers[i].burgerStatus;
+                    if (firstData.length == 0) {
+                        firstData.push(bString)
+                        firstData.push(bNumber)
+                        firstData.push(bTitle)
+                        firstData.push(bID)
+                        firstData.push(bStatus)
+                    }
+                    this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
+                    // this.parseDataIntoNewBurgers(this.burgers[i].burgerString, i, this.burgers[i].burgerTitle, this.burgers[i]._id, this.burgers[i].burgerStatus)
                 }
-                this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
-                // this.parseDataIntoNewBurgers(this.burgers[i].burgerString, i, this.burgers[i].burgerTitle, this.burgers[i]._id, this.burgers[i].burgerStatus)
             }
             
         }
