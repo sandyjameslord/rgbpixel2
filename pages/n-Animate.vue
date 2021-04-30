@@ -1488,6 +1488,7 @@ export default {
                     }
                 this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
                 return
+                }
             }
             else if (userEmail == this.$auth.$state.user.email) {
                 let bString = this.burgers[i].burgerString;
