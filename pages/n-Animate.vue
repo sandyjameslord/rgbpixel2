@@ -425,7 +425,9 @@ export default {
                 square.style.animation = `transposeColor${i} 1000ms ${i*1}ms ease-in-out forwards`;
             }
             setTimeout(function() { 
-                location.reload();
+                let url = `http://rgbpixel.herokuapp.com/n-Animate?burgerTitle=${this.burgerIDAtHand}`
+                location.assign(url)
+                // location.reload();
             }, 1200);
 
         },
