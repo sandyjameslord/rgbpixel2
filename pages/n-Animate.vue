@@ -1493,7 +1493,7 @@ export default {
             // }
             // else 
             if (userEmail == this.$auth.$state.user.email) {
-                if (this.$route.query.imageID == this.burgers[i]._id) {
+                // if (this.$route.query.imageID == this.burgers[i]._id) {
                     console.log("inside nthis place");
                     let bString = this.burgers[i].burgerString;
                     let bNumber = i;
@@ -1509,7 +1509,7 @@ export default {
                     }
                     this.parseDataIntoNewBurgers(bString, bNumber, bTitle, bID, bStatus)
                     
-                }
+                // }
             }
             
         }
