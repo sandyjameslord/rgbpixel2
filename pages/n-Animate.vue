@@ -389,11 +389,13 @@ export default {
             }
             
             // let flashingToThisBurgerString = "";
+            let title = "";
             for (let i = 0; i < this.burgers.length; i++) {
                 if (this.burgers[i].burgerCreator == "burgerfyAdmin@gmail.com") {
                     let burgerTitle = this.burgers[i].burgerTitle;
 
                     if (burgerTitle == this.otherImage) {
+                        title = burgerTitle;
                         this.flashingToThisBurgerString = this.burgers[i].burgerString;
                     }
                 }
@@ -425,7 +427,7 @@ export default {
                 square.style.animation = `transposeColor${i} 1000ms ${i*1}ms ease-in-out forwards`;
             }
             setTimeout(function() { 
-                let url = `http://rgbpixel.herokuapp.com/n-Animate?burgerTitle=${this.burgerIDAtHand}`
+                let url = `http://rgbpixel.herokuapp.com/n-Animate?burgerTitle=${title}`
                 location.assign(url)
                 // location.reload();
             }, 1200);
