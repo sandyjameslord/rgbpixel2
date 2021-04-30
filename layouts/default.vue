@@ -26,13 +26,14 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
 * {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P';
+  /* font-family: 'Press Start 2P', cursive; */
   padding: 0;
   margin: 0;
 }
 
 h1 {
-  font-family: 'Press Start 2P', cursive;
+  /* font-family: 'Press Start 2P', cursive; */
 }
 
 body {
