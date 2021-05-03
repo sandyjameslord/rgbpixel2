@@ -359,6 +359,11 @@ export default {
 </script>
 
 <style scoped>
+main {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
 #title {
     font-size: 1.3em;
 }
