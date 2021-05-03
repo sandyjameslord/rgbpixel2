@@ -549,7 +549,7 @@
             <span>Mode:<span id='paintOrClick'>Paint mode</span></span><br>
 
             <button @click="enablePaintToColor()">Enable paint to color</button>
-            <button @click="enableClickToColor()">Enable click to color</button><br><br>
+            <button @click="enableClickToColor()">Enable click to color</button>
         </div>
         <input id='userBurgerTitle' type="text" class="text" placeholder="Title..." v-model="burgerTitle"><br>
 
