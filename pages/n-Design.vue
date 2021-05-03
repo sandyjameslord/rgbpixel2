@@ -529,7 +529,7 @@
         </div>
         <br>
         <div id='colorContainer'>
-            <span><span>Choose a Color</span><input type="color" name="" id="colorMachine" v-model="colorChoice"></span>
+            <span><span style='text-align=center'>Choose a Color</span><input type="color" name="" id="colorMachine" v-model="colorChoice"></span>
             
             <div id='myColors'>
             
