@@ -545,15 +545,15 @@
         <div id='hiddenData'></div>
         <!-- <div> -->
         <div id='clickOrPaintArea'>
-            <span>Paint or Click?</span><br>
-            <span>Mode:<span id='paintOrClick'>In Paint mode</span></span>
+            <span>Paint mode or Click mode?</span><br>
+            <span>Mode:<span id='paintOrClick'>Paint mode</span></span>
 
             <button @click="enablePaintToColor()">Enable paint to color</button>
             <button @click="enableClickToColor()">Enable click to color</button><br><br>
         </div>
         <input id='userBurgerTitle' type="text" class="text" placeholder="Title..." v-model="burgerTitle"><br>
 
-        <button @click='parseHHDataIntoNewBurger1()'>Ready? Upload!</button>
+        <button @click='parseHHDataIntoNewBurger1()'>Ready? Click to upload</button>
 
         
     </main>
