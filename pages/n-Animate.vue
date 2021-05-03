@@ -371,7 +371,7 @@ export default {
 
         editThisImage(burgerID) {
             // this.$router.push(`/n-editImage?burgerID=${this.burgerIDAtHand}`);
-            this.$router.push(`/n-editImage?burgerID=${burgerID}`);
+            this.$router.push(`/n-editImage?burgerID=${this.burgerIDAtHand}`);
         },
 
         async onLogout() {
