@@ -839,12 +839,12 @@ export default {
     },
     mounted() {
         let burgerID = this.$route.query.burgerID;
-        let newBID = "";
+        // let newBID = "";
         if (burgerID == "photo") {
             
             for (let i = 0; i < this.burgers.length; i++) {
                 if (this.$auth.user.email == this.burgers[i].burgerCreator) {
-                    newBID = this.burgers[i]._id;
+                    burgerID = this.burgers[i]._id;
                     break;
                 }
             }
@@ -859,7 +859,9 @@ export default {
         let colorString = "";
         for (let i = 0; i < this.burgers.length; i++) {
             let id = this.burgers[i]._id;
-            if (id == newBID) {
+            
+            
+            if (id == burgerID) {
                 colorString = this.burgers[i].burgerString
             }
             // console.log("burgerID, id", burgerID, id);
