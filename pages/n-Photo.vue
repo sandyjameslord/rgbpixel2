@@ -16,10 +16,10 @@
         <!-- <button @click="makeBottomCircles()">Circles</button><button @click="resetUnitsToSquares()">Squares</button> -->
         <!-- <button @click="makeShake()">Shake on</button><button @click="resetAnimationToZero()">Animations off</button> -->
         <br>
-        <span>Step 3:</span><button @click="getAverageImageColor()">Create burger</button>
+        <span>Step 3:</span><button @click="getAverageImageColor()">Create rgbPixelImage</button>
 
-        <input id='nameOfImage' type="text" v-model="burgerTitle" :placeholder="fileName || this.fileName">
-        <button @click='parseHHDataIntoNewBurger1()'>Upload!</button>
+        <input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title...">
+        <button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button>
 
         <div id='averageColorContainer'></div>
         <!-- <button @click="onUploadBurger">Upload this!</button> -->
@@ -394,6 +394,7 @@ img {
 input {
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 1.5em;
 }
 
 #hiddenData {
@@ -404,4 +405,9 @@ input {
     width: 0;
     color: transparent;
 }
+
+button {
+    padding: 5px 10px;
+}
+
 </style>
