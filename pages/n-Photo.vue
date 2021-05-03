@@ -2,24 +2,16 @@
     <main id='main'>
         <div id='hiddenData'></div>
         <div id='title'>Choose any image and rgbPixelfy it!</div>
-        <span>Step 1:</span><input type="file" name="photo" @change="onFileSelected" ><br>
+        <div>Step 1:<input type="file" name="photo" @change="onFileSelected"></div>
 
-        <!-- <div>BELOW is userFileDisplay</div> -->
-        <div id='disp1'></div><br>
+        <div id='disp1'></div>
 
-        <!-- <div>BELOW is sliceImageButton</div><br> -->
-        <br><span>Step 2:</span><br><button id='sliceImageButton' @click='sliceUpImage()'>Slice image</button><br>
+        <div>Step 2:<button id='sliceImageButton' @click='sliceUpImage()'>Slice image</button></div>
+        
+        <div>Step 3:<button @click="getAverageImageColor()">Create rgbPixelImage</button></div>
 
-        <!-- <div>in the div BELOW are the 256 pieces</div> -->
-        <!-- <div id='pieces64Container'></div> -->
-        <!-- <br> -->
-        <!-- <button @click="makeBottomCircles()">Circles</button><button @click="resetUnitsToSquares()">Squares</button> -->
-        <!-- <button @click="makeShake()">Shake on</button><button @click="resetAnimationToZero()">Animations off</button> -->
-        <!-- <br> -->
-        <span>Step 3:</span><br><button @click="getAverageImageColor()">Create rgbPixelImage</button><br><br><br>
-
-        <span>Step 4:</span><br><input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br><br>
-        <span>Step 5:</span><br><button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button>
+        <div>Step 4:<input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."></div>
+        <div>Step 5:<button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button></div>
 
         <div id='averageColorContainer'></div>
         <!-- <button @click="onUploadBurger">Upload this!</button> -->
@@ -252,14 +244,14 @@ export default {
         sliceUpImage(){
             let image = this.image;
 
-            let container = document.getElementById("pieces64Container");
+            // let container = document.getElementById("pieces64Container");
 
             let newContainer = document.createElement("div");
             newContainer.style.width = '4em';
             newContainer.style.height = '4em';
             newContainer.style.display = 'flex';
             newContainer.style.flexWrap = 'wrap';
-            newContainer.style.transform = "translateY(-200px) rotateY(180deg) rotate(90deg)"
+            newContainer.style.transform = "rotateY(180deg) rotate(90deg)"
             // newContainer.style.margin = "20px auto";
 
             let r01 = [];
@@ -383,13 +375,13 @@ img {
     object-fit: cover;
 }
 
-#pieces64Container {
+/* #pieces64Container {
     display: flex;
     height: 64px;
     width: 64px;
     flex-direction: column;
     flex-wrap: wrap;
-}
+} */
 
 input {
     margin-top: 20px;
@@ -408,6 +400,8 @@ input {
 
 button {
     padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 </style>
