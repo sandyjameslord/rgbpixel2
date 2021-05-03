@@ -7,13 +7,13 @@
         <div id='disp1'></div>
 
         <div>Step 2:<button id='sliceImageButton' @click='sliceUpImage()'>Slice image</button></div>
-        
+        <div id='disp2'></div>
         <div>Step 3:<button @click="getAverageImageColor()">Create rgbPixelImage</button></div>
-
+        <div id='disp3'><div id='averageColorContainer'></div></div>
         <div>Step 4:<input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."></div>
         <div>Step 5:<button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button></div>
 
-        <div id='averageColorContainer'></div>
+        
         <!-- <button @click="onUploadBurger">Upload this!</button> -->
     </main>
 </template>
@@ -329,8 +329,8 @@ export default {
                 }
                 
             }
-            let main = document.getElementById("main")
-            main.appendChild(newContainer)
+            let disp2 = document.getElementById("disp2")
+            disp2.appendChild(newContainer)
 
             let finString = "";
             console.log("r01",r01)

@@ -553,7 +553,7 @@
         </div>
         <input id='userBurgerTitle' type="text" class="text" placeholder="Title..." v-model="burgerTitle"><br>
 
-        <button @click='parseHHDataIntoNewBurger1()'>Ready? Click to upload</button>
+        <button @click='parseHHDataIntoNewBurger1()'>Ready? Upload</button>
 
         
     </main>
