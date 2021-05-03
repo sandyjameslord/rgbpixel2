@@ -5,8 +5,8 @@
         </template> -->
         <div id='number'>0</div>
         
-        <h3>Design an rgbPixel</h3>
-
+        <h3>Create an rgbPixel from scratch</h3>
+        <div>Step 1: Design</div>
         <div id="navbar">  
             <div class='outer'>
              
@@ -529,7 +529,7 @@
         </div>
         <br>
         <div id='colorContainer'>
-            <input type="color" name="" id="colorMachine" v-model="colorChoice">
+            <span><span>Choose a Color</span><input type="color" name="" id="colorMachine" v-model="colorChoice"></span>
             
             <div id='myColors'>
             
