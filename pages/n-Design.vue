@@ -551,9 +551,10 @@
             <button @click="enablePaintToColor()">Enable paint to color</button>
             <button @click="enableClickToColor()">Enable click to color</button>
         </div>
+        <div>Step 2: Provide a title</div>
         <input id='userBurgerTitle' type="text" class="text" placeholder="Title..." v-model="burgerTitle"><br>
-
-        <button @click='parseHHDataIntoNewBurger1()'>Ready? Upload</button>
+        <div>Step 3: Ready? Upload below</div>
+        <button @click='parseHHDataIntoNewBurger1()'>Upload</button>
 
         
     </main>
