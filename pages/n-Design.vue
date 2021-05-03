@@ -545,8 +545,8 @@
         <div id='hiddenData'></div>
         <!-- <div> -->
         <div id='clickOrPaintArea'>
-            <span>Paint mode or Click mode?</span><br>
-            <span>Mode:<span id='paintOrClick'>Paint mode</span></span>
+            <!-- <span>Paint mode or Click mode?</span><br> -->
+            <span>Mode:<span id='paintOrClick'>Paint mode</span></span><br>
 
             <button @click="enablePaintToColor()">Enable paint to color</button>
             <button @click="enableClickToColor()">Enable click to color</button><br><br>
