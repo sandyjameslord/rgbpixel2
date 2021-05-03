@@ -16,9 +16,9 @@
         <!-- <button @click="makeBottomCircles()">Circles</button><button @click="resetUnitsToSquares()">Squares</button> -->
         <!-- <button @click="makeShake()">Shake on</button><button @click="resetAnimationToZero()">Animations off</button> -->
         <br>
-        <span>Step 3:</span><button @click="getAverageImageColor()">Create rgbPixelImage</button>
+        <span>Step 3:</span><button @click="getAverageImageColor()">Create rgbPixelImage</button><br>
 
-        <input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title...">
+        <input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br>
         <button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button>
 
         <div id='averageColorContainer'></div>
