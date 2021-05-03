@@ -5,10 +5,10 @@
         <span>Step 1:</span><input type="file" name="photo" @change="onFileSelected" ><br>
 
         <!-- <div>BELOW is userFileDisplay</div> -->
-        <div id='disp1'></div>
+        <div id='disp1'></div><br>
 
         <!-- <div>BELOW is sliceImageButton</div><br> -->
-        <br><span>Step 2:</span><button id='sliceImageButton' @click='sliceUpImage()'>Slice image</button><br>
+        <br><span>Step 2:</span><br><button id='sliceImageButton' @click='sliceUpImage()'>Slice image</button><br>
 
         <!-- <div>in the div BELOW are the 256 pieces</div> -->
         <div id='pieces64Container'></div>
@@ -16,10 +16,10 @@
         <!-- <button @click="makeBottomCircles()">Circles</button><button @click="resetUnitsToSquares()">Squares</button> -->
         <!-- <button @click="makeShake()">Shake on</button><button @click="resetAnimationToZero()">Animations off</button> -->
         <br>
-        <span>Step 3:</span><button @click="getAverageImageColor()">Create rgbPixelImage</button><br>
+        <span>Step 3:</span><br><button @click="getAverageImageColor()">Create rgbPixelImage</button><br>
 
-        <input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br>
-        <button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button>
+        <span>Step 4:</span><br><input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br>
+        <span>Step 5:</span><br><button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button>
 
         <div id='averageColorContainer'></div>
         <!-- <button @click="onUploadBurger">Upload this!</button> -->
