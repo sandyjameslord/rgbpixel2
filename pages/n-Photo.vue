@@ -11,11 +11,11 @@
         <br><span>Step 2:</span><br><button id='sliceImageButton' @click='sliceUpImage()'>Slice image</button><br>
 
         <!-- <div>in the div BELOW are the 256 pieces</div> -->
-        <div id='pieces64Container'></div>
-        <br>
+        <!-- <div id='pieces64Container'></div> -->
+        <!-- <br> -->
         <!-- <button @click="makeBottomCircles()">Circles</button><button @click="resetUnitsToSquares()">Squares</button> -->
         <!-- <button @click="makeShake()">Shake on</button><button @click="resetAnimationToZero()">Animations off</button> -->
-        <br>
+        <!-- <br> -->
         <span>Step 3:</span><br><button @click="getAverageImageColor()">Create rgbPixelImage</button><br><br><br>
 
         <span>Step 4:</span><br><input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br><br>
