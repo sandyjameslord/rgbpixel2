@@ -5,7 +5,7 @@
         </template> -->
         <div id='number'>0</div>
         
-        <h3>Create an rgbPixel from scratch</h3>
+        <h3>Create an rgbPixel</h3>
         <div>Step 1: Design</div>
         <div id="navbar">  
             <div class='outer'>
