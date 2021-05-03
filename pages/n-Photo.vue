@@ -16,9 +16,9 @@
         <!-- <button @click="makeBottomCircles()">Circles</button><button @click="resetUnitsToSquares()">Squares</button> -->
         <!-- <button @click="makeShake()">Shake on</button><button @click="resetAnimationToZero()">Animations off</button> -->
         <br>
-        <span>Step 3:</span><br><button @click="getAverageImageColor()">Create rgbPixelImage</button><br>
+        <span>Step 3:</span><br><button @click="getAverageImageColor()">Create rgbPixelImage</button><br><br><br>
 
-        <span>Step 4:</span><br><input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br>
+        <span>Step 4:</span><br><input id='nameOfImage' type="text" v-model="burgerTitle" placeholder="Title..."><br><br>
         <span>Step 5:</span><br><button @click='parseHHDataIntoNewBurger1()'>Upload rgbPixelImage</button>
 
         <div id='averageColorContainer'></div>
@@ -259,7 +259,7 @@ export default {
             newContainer.style.height = '4em';
             newContainer.style.display = 'flex';
             newContainer.style.flexWrap = 'wrap';
-            newContainer.style.transform = "translateY(-150px) rotateY(180deg) rotate(90deg)"
+            newContainer.style.transform = "translateY(-200px) rotateY(180deg) rotate(90deg)"
             // newContainer.style.margin = "20px auto";
 
             let r01 = [];
